@@ -7,5 +7,7 @@ windows10
 php7  
 xampp  
 
+## 目的
+phpの勉強と，甥っ子が魚が好きなので
 
 <img width="500" alt="fis_book" src="https://user-images.githubusercontent.com/52119206/82722710-12db1880-9d04-11ea-8988-a81dbcf5bd79.png">
