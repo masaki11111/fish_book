@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <title>i</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- css -->
+  <link rel="stylesheet" href="./main.css">
+  <!-- fontawesome-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="title">
+        Biotope
+      </div>
+      <div class="menu">
+        <div class="tex_1">
+          Area
+        </div>
+        <div class="tex_1">
+          Aquarium
+        </div>
+        <div class="tex_1">
+          Contact
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- <div class="fish_1">
+      <img src="../img/fish_1.png" alt="isara">
+    </div>
+    <div class="fish_2">
+      <img src="../img/fish_2.png" alt="isara">
+    </div>
+    <div class="fish_3">
+      <img src="../img/fish_3.png" alt="isara">
+    </div>
+    <div class="fish_4">
+      <img src="../img/fish_4.png" alt="isara">
+    </div> -->
+    <img class="fish_1" src="../img/fish_1.png" alt="isara">
+    <img class="fish_2" src="../img/fish_2.png" alt="isara">
+    <img class="fish_3" src="../img/fish_3.png" alt="isara">
+    <img class="fish_4" src="../img/fish_4.png" alt="isara">
+
+
+  </main>
+
+
+
+  <!-- 以下のバージョンだとcol-mdなどブレイクポイントをしているときは動くが，col-8など指定していない場合は数値に関係なく縦並びになる -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    var fish_1 = $('.fish_1');
+    var fish_2 = $('.fish_2');
+    var fish_3 = $('.fish_3');
+    var fish_4 = $('.fish_4');
+    fish_1.animate({
+      right: 100,
+    },5000);
+    fish_2.animate({
+      right: 200,
+    },5000);
+    fish_3.animate({
+      right: 300,
+    },5000);
+    fish_4.animate({
+      right: 400,
+    },5000);
+    // pagetop.hide();
+    // $(window).scroll(function () {
+    //   if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+    //     pagetop.fadeIn();
+    //   } else {
+    //     pagetop.fadeOut();
+    //   }
+    // });
+    // .animate : 引数のプロパティの遷移移動を行う
+    // fish_1.click(function () {
+    //   $('html').animate({
+    //     scrollTop: 100
+    //   }, 500); //0.5秒かけてトップへ移動
+    //   return false;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.font-std {
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1.0rem solid black !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 54rem) {
+  html {
+    font-size: 78.125%;
+  }
+}
+html body {
+  font-size: 1.5em;
+  height: 500rem;
+  position: relative;
+}
+html body .background {
+  position: absolute;
+  height: 500rem;
+  width: 100%;
+  top: 22.7rem;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), black);
+}
+html body header .sky {
+  position: absolute;
+  width: 100%;
+  height: 24.0rem;
+  z-index: 2;
+  background-color: white;
+}
+html body header .fix {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  background-color: rgba(255, 255, 255, 0);
+}
+html body header .fix .header_style {
+  display: flex;
+}
+html body header .fix .header_style .header_1 {
+  margin: 1.0rem 1.0rem;
+  font-weight: bold;
+  font-size: 2.0rem;
+}
+@media (min-width: 54rem) {
+  html body header .fix .header_style .header_1 {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    margin-bottom: 2.0rem;
+  }
+}
+html body header .fix .header_style .header_3 {
+  display: flex;
+  height: 6.0rem;
+  margin-left: auto;
+  padding: 1.0rem;
+}
+html body header .fix .header_style .header_3 .menu {
+  margin: 0.3rem 1.0rem;
+  padding: 0.1rem 0rem;
+  bottom: 2px solid #ececec !important;
+  /* background-color: red; */
+}
+html body header .fix .header_style .header_3 .menu .title {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  /* width:18.0rem; */
+  padding: 1.0rem 0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .icon {
+  padding: 0rem 1.0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .icon img {
+  width: 3.0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .title_1 {
+  box-sizing: border-box;
+  display: none;
+  font-weight: bold;
+}
+html body header .fix .header_style .header_3 .menu .title .switch {
+  margin-left: auto;
+  height: 3.0rem;
+  width: 3rem;
+  background-color: rgba(201, 229, 255, 0.24);
+  border-radius: 50%;
+  text-align: center;
+}
+html body main {
+  /* モーダルウィンドウ */
+}
+html body main .dropdown {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+html body main .dropdown .flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.0rem 3.0rem;
+}
+html body main .dropdown .flex .item {
+  margin: auto;
+}
+html body main .dropdown .flex .item img {
+  width: 15.0rem;
+  object-fit: cover;
+}
+html body main .modal {
+  display: none;
+  /* height: 100vh; */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+html body main .modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  /* height: 100vh; */
+  height: 100.0%;
+  position: absolute;
+  width: 100%;
+}
+html body main .modal__content {
+  font-family: Helvetica , "游ゴシック", sans-serif;
+  border-radius: 80% 30% 50% 50%/50%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.0rem;
+  width: 60%;
+}
+html body main .sam {
+  color: white;
+}
+
+/*# sourceMappingURL=_main.css.map */

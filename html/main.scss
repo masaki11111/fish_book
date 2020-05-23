@@ -1,0 +1,271 @@
+
+
+// color
+$color-btn: #da6b64;
+$color-empha: #ebb94d;
+$color-bcg-2: #fef5e0;
+
+//
+
+$sp: .0rem; // タブレット
+$tb: 54.0rem; // タブレット
+$pc: 72.0rem; // PC
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+// @mixin sptb {
+//   @media (min-width: ($sp + 1px) and max-width:($pc - 1px)) {
+//     @content;
+//   }
+// }
+@mixin tb {
+  @media (min-width: ($tb)) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+
+
+.font-std{
+  text-align: center;
+  font-weight: bold;
+}
+
+.border{
+  border-bottom:1.0rem solid black !important;
+}
+
+html{
+  // font-size: 62.5%;
+  font-size: 62.5%;
+  // color: red;
+  @include tb {
+    font-size: 78.125%;
+  }
+
+
+
+  body{
+    // color: red;
+    font-size: 1.5em;
+    height:500rem;
+    // width:100rem;
+    position:relative;
+    // background: linear-gradient(to bottom, #FFC778, rgba(255, 0, 0, 0.1));
+    .background{
+      // 起点を設定
+      position:absolute;
+      height:500rem;
+      width:100%;
+      top:22.7rem;
+      left:0;
+      z-index:4;
+      // bubbleより上にある
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    }
+    header{
+      .sky{
+        position:absolute;
+        // position:fixed;
+        width:100%;
+        // color: red;
+        // %指定でいい感じにできないか
+        height:24.0rem;
+        // top: .0rem;
+        // left: .0rem;
+        // background-color: rgba(255, 255, 255, 0.2);
+        z-index: 2;
+        background-color: white;
+        // color:red;
+
+      }
+      .fix{
+        position:fixed;
+        width:100%;
+        // color: red;
+        // %指定でいい感じにできないか
+        // height:24.0rem;
+        // top: .0rem;
+        // left: .0rem;
+        // background-color: rgba(255, 255, 255, 0.2);
+        z-index: 11;
+        background-color: rgba(255, 255, 255, 0);
+        // color:red;
+        .header_style{
+          display: flex;
+          .header_1{
+            margin: 1.0rem 1.0rem;
+            font-weight:bold;
+            font-size: 2.0rem;
+            @include tb {
+              display: flex;
+              flex-flow: row-reverse;
+              align-items: center;
+              margin-bottom: 2.0rem;
+            }
+            .tex{
+            }
+            .header_1_1{
+              // img{
+              //   width: 10.0rem;
+              // }
+            }
+          }
+          .header_3{
+            display: flex;
+            height:6.0rem;
+            margin-left: auto;
+            // align-items: center ;
+            padding:1.0rem;
+            .menu{
+              margin:0.3rem 1.0rem;
+              padding: 0.1rem 0rem;
+              bottom: 2px solid #ececec !important;
+              // background-color:  $color-bcg-2;
+              /* background-color: red; */
+              .title{
+                display: flex;
+                align-items: center;
+                height:3.2rem;
+                /* width:18.0rem; */;
+                padding:1.0rem 0rem;
+                // margin: 2.0rem;
+                .icon{
+                  padding:0rem 1.0rem;
+                  img{
+                    width:3.0rem;
+                  }
+                }
+                .title_1{
+                  box-sizing: border-box;
+                  // display: inline-block;
+                  display: none;
+                  font-weight: bold;
+
+
+                }
+                .switch{
+                  margin-left:auto;
+                  height:3.0rem;
+                  width:3rem;
+                  background-color: rgba(201, 229, 255, 0.24);
+                  border-radius: 50%;
+                  text-align: center;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    main{
+      // color:red;
+      .dropdown{
+        position: fixed;
+        // top: 6.0rem;
+        display: none;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.7);
+        .flex{
+          display: flex;
+          flex-wrap:wrap;
+          // align-items: center;
+          // align-self: center;
+          padding:1.0rem 3.0rem;
+          // align-items: center;
+          .item{
+            // text-align:center;
+            margin:auto;
+            img{
+              width: 15.0rem;
+              // object-fit: contain;
+              object-fit: cover;
+              // background-color: gray;
+              // width: 150px;
+              // height: 150px;
+            }
+            // }
+          }
+        }
+      }
+      /* モーダルウィンドウ */
+      .modal{
+          display: none;
+          /* height: 100vh; */
+          height: 100%;
+          position: fixed;
+          top: 0;
+          width: 100%;
+      }
+      .modal__bg{
+          background: rgba(0,0,0,0.8);
+          /* height: 100vh; */
+          height: 100.0%;
+          position: absolute;
+          width: 100%;
+      }
+      .modal__content{
+         font-family: Helvetica , "游ゴシック", sans-serif;
+         border-radius: 80% 30% 50% 50%/50%;
+       text-align: center;
+       font-size: 4rem;
+       font-weight: bold;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          padding: 4.0rem;
+          width: 60%;
+      }
+
+      .sam{
+        color:white;
+      }
+      // .fish_1{
+      //   position:absolute;
+      //   top:10rem;
+      //   // right:0rem;
+      //   img{
+      //   }
+      // }
+      // .fish_2{
+      //   position:absolute;
+      //   top:20rem;
+      //   // right:0rem;
+      //   img{
+      //     object-fit: contain;
+      //     width: 10%;
+      //   }
+      // }
+      //
+      // .fish_3{
+      //   position:absolute;
+      //   top:30rem;
+      //   // right:0rem;
+      //   img{
+      //     object-fit: contain;
+      //     width: 10%;
+      //   }
+      // }
+      // .fish_4{
+      //   position:absolute;
+      //   top:40rem;
+      //   // right:0rem;
+      //   img{
+      //     object-fit: contain;
+      //     width: 10%;
+      //   }
+      // }
+    }
+  }
+}

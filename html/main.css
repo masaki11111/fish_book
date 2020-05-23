@@ -1,0 +1,126 @@
+.font-std {
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1.0rem solid black !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 54rem) {
+  html {
+    font-size: 78.125%;
+  }
+}
+html body {
+  font-size: 1.5em;
+  height: 500rem;
+  position: relative;
+}
+html body .background {
+  position: absolute;
+  height: 500rem;
+  width: 100%;
+  top: 22.7rem;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), black);
+}
+html body header .sky {
+  position: absolute;
+  width: 100%;
+  height: 24.0rem;
+  z-index: 2;
+  background-color: white;
+}
+html body header .fix {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  background-color: rgba(255, 255, 255, 0);
+}
+html body header .fix .header_style {
+  display: flex;
+}
+html body header .fix .header_style .header_1 {
+  margin: 1.0rem 1.0rem;
+  font-weight: bold;
+  font-size: 2.0rem;
+}
+@media (min-width: 54rem) {
+  html body header .fix .header_style .header_1 {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    margin-bottom: 2.0rem;
+  }
+}
+html body header .fix .header_style .header_3 {
+  display: flex;
+  height: 6.0rem;
+  margin-left: auto;
+  padding: 1.0rem;
+}
+html body header .fix .header_style .header_3 .menu {
+  margin: 0.3rem 1.0rem;
+  padding: 0.1rem 0rem;
+  bottom: 2px solid #ececec !important;
+  /* background-color: red; */
+}
+html body header .fix .header_style .header_3 .menu .title {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  /* width:18.0rem; */
+  padding: 1.0rem 0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .icon {
+  padding: 0rem 1.0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .icon img {
+  width: 3.0rem;
+}
+html body header .fix .header_style .header_3 .menu .title .title_1 {
+  box-sizing: border-box;
+  display: none;
+  font-weight: bold;
+}
+html body header .fix .header_style .header_3 .menu .title .switch {
+  margin-left: auto;
+  height: 3.0rem;
+  width: 3rem;
+  background-color: rgba(201, 229, 255, 0.24);
+  border-radius: 50%;
+  text-align: center;
+}
+html body main .dropdown {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+html body main .dropdown .flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.0rem 3.0rem;
+}
+html body main .dropdown .flex .item {
+  margin: auto;
+}
+html body main .dropdown .flex .item img {
+  width: 15.0rem;
+  object-fit: cover;
+}
+html body main .m_item {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+html body main .sam {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
